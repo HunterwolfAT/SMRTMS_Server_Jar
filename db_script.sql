@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS User
   	Email char(50),
     	Password char(20),
 	Position int, 
-	Avatar char(15)
+	Avatar char(15),
+	IsOnline boolean
 );
     
 CREATE TABLE IF NOT EXISTS User_Friends
