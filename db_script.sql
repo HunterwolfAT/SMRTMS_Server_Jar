@@ -3,7 +3,8 @@ CREATE database IF NOT EXISTS SMRTMS;
 USE SMRTMS;
 
 CREATE TABLE IF NOT EXISTS User 
-(	ID char(100) unique,
+(	
+	ID int unique auto_increment,
 	Username char(50),
   	Email char(50),
     	Password char(20),
