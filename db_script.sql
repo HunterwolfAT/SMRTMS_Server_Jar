@@ -3,11 +3,12 @@ CREATE database IF NOT EXISTS SMRTMS;
 USE SMRTMS;
 
 CREATE TABLE IF NOT EXISTS User 
-(	ID int unique auto_increment,
+(	ID char(100) unique,
 	Username char(50),
   	Email char(50),
     	Password char(20),
-	Position int, 
+	Longitude double,
+	Latitude double,
 	Avatar char(15),
 	IsOnline boolean
 );
@@ -34,7 +35,7 @@ CREATE TABLE IF NOT EXISTS Event_Attendees
 );
 
 INSERT INTO User
-(Username, Email, `Password`, Position, Avatar) VALUES
-("Hubert", "h@gmail.com", "123456", 3189, "f34tg45gh34.png");
+(Username, Email, `Password`, Longitude, Latitude, Avatar) VALUES
+("Hubert", "h@gmail.com", "123456", 13.23, 19.234, "f34tg45gh34.png");
 
 INSERT INTO Event_Attendees (User_ID, Event_ID) VALUES (1, 2);
