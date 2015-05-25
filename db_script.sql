@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS User
 );
     
 CREATE TABLE IF NOT EXISTS User_Friends
-(	Friender_ID int,
-	Friendee_ID int,
+(	Friender_ID char(100),
+	Friendee_ID char(100),
     Tracking_Flag bool
 );
 
