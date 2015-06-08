@@ -46,6 +46,15 @@ CREATE TABLE IF NOT EXISTS Event_Attendees
 	FOREIGN KEY (Event_ID) REFERENCES Event(ID)
 );
 
+CREATE TABLE IF NOT EXISTS Friend_Request_Stash
+(
+	Friender_ID int,
+	Friendee_ID int,
+
+	FOREIGN KEY (Friender_ID) REFERENCES User(ID),
+	FOREIGN KEY (Friendee_ID) REFERENCES User(ID)
+);
+
 INSERT INTO User
 (Username, Email, Password, Longitude, Latitude, Avatar) VALUES
 ("Hubert", "h@gmail.com", "123456", 13.23, 19.234, "f34tg45gh34.png");
