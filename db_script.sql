@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS Event
 (
 	ID int unique auto_increment,
         Name char(50),
+	Time int,
 	Description text,
 	Longitude double,
 	Latitude double,
