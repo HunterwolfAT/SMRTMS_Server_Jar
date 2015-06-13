@@ -5,8 +5,8 @@ USE SMRTMS;
 CREATE TABLE IF NOT EXISTS User 
 (	
 	ID int unique auto_increment,
-	Username char(50),
-  	Email char(50),
+	Username char(50) unique,
+  	Email char(50) unique,
     	Password char(20),
 	Longitude double,
 	Latitude double,
